@@ -17,8 +17,20 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>WEDDING!</h1>
-
+    <div class="container-fluid">
+      <div class="banner-image">
+        <div class="banner-text d-flex justify-content-center">
+          <h1>WEDDING!</h1>
+        </div>
+      </div>
+      <div class="text-card d-flex justify-content-center align-items-center">
+        <h1>Tom Horan and Kathryn Birkett</h1>
+      </div>
+      <div class="text-card d-flex justify-content-center align-items-center">
+        <h2>Carlingford Brewery</h2>
+        <div id="map"></div>
+      </div>
+    </div>
     <!-- bootstrap script link--->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -28,5 +40,28 @@
     <!-- self written js and jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const carlingford = { lat: 53.9942835247462, lng: -6.221741917436771 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: carlingford,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: carlingford,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMVA1N9LulZrpfUfRg2rshvb2J6oXhtGo&callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
   </body>
 </html>
