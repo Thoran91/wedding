@@ -20,14 +20,20 @@
     <div class="container-fluid">
       <div class="banner-image">
         <div class="banner-text d-flex justify-content-center">
-          <h1>WEDDING!</h1>
+          <h1>WEDDING IS BEING</h1>
+        </div>
+        <div class="banner-text d-flex justify-content-center">
+          <a class="link-button" href="#map">Venue</a>
+          <a class="link-button" href="#map">Venue</a>
+          <a class="link-button" href="#map">Venue</a>
         </div>
       </div>
       <div class="text-card d-flex justify-content-center align-items-center">
-        <h1>Tom Horan and Kathryn Birkett</h1>
+        <div class="row">
+          <h1>Tom Horan and Katy Birkett</h1>
+        </div>
       </div>
       <div class="text-card d-flex justify-content-center align-items-center">
-        <h2>Carlingford Brewery</h2>
         <div id="map"></div>
       </div>
     </div>
@@ -44,14 +50,14 @@
     <script>
       // Initialize and add the map
       function initMap() {
-        // The location of Uluru
+        // The location
         const carlingford = { lat: 53.9942835247462, lng: -6.221741917436771 };
-        // The map, centered at Uluru
+        // The map
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 14,
+          zoom: 12,
           center: carlingford,
         });
-        // The marker, positioned at Uluru
+        // The marker
         const marker = new google.maps.Marker({
           position: carlingford,
           map: map,
