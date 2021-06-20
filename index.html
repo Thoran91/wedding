@@ -28,15 +28,17 @@
           <a class="link-button" href="#map">Gifts</a>
         </div>
       </div>
-      <div class="text-card d-flex justify-content-center align-items-center">
-        <div class="row">
-          <h1>Tom Horan and Katy Birkett</h1>
-        </div>
-      </div>
-      <div class="text-card d-flex justify-content-center align-items-center">
-        <div id="map"></div>
+      <div class="map-card d-flex flex-column justify-content-center align-items-center">
+        <h1 class="carlingford-text">The Old Mill, Carlingford Brewery</h1>
+        <div class="map" id="map"></div>
       </div>
     </div>
+    <div class="text-card d-flex justify-content-center align-items-center">
+      <div class="row">
+        <h1>Tom Horan and Katy Birkett</h1>
+      </div>
+    </div>
+
     <!-- bootstrap script link--->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -52,10 +54,11 @@
       function initMap() {
         // The location
         const carlingford = { lat: 53.9942835247462, lng: -6.221741917436771 };
+        const center = { lat: 54.000301218478484, lng: -6.316976531317811 };
         // The map
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 12,
-          center: carlingford,
+          center: center,
         });
         // The marker
         const marker = new google.maps.Marker({

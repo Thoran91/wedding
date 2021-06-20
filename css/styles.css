@@ -22,7 +22,7 @@ body {
 
 .banner-text h1 {
   width: 80vh;
-  font-size: 80px;
+  font-size: 60px;
   font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -32,6 +32,17 @@ body {
   height: 60vh;
 }
 
+.map-card {
+  background-color: white;
+  width: 100vw;
+  height: 80vh;
+}
+
+.carlingford-text {
+  margin: 10px;
+  text-align: center;
+}
+
 .link-button {
   margin: 20px;
   text-decoration: none;
@@ -39,6 +50,6 @@ body {
 }
 
 #map {
-  height: 400px;
+  height: 60vh;
   width: 100vh;
 }
