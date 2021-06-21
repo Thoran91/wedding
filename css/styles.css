@@ -1,5 +1,7 @@
-.container-fluid {
-  padding: 0;
+.container-fluid{
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
   background-size: cover;
   position: relative;
   height: 100vh;
+  width: 100vw;
 }
 
 .banner-text {
@@ -29,16 +32,16 @@ body {
 .text-card {
   background-color: white;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
 }
 
 .map-card {
   background-color: white;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 
-.carlingford-text {
+.centered-text {
   margin: 10px;
   text-align: center;
 }
@@ -50,6 +53,6 @@ body {
 }
 
 #map {
-  height: 60vh;
-  width: 100vh;
+  height: 100vh;
+  width: 100vw;
 }
